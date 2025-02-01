@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import techproed.utilities.Driver;
 
 public class C01_DriverUsage {
-    @Test
+    @Test(groups = "smoke")
     public void test01() {
 
 
