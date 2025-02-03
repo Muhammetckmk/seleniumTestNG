@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Batch291">
+    <listeners>
+        <listener class-name="techproed.utilities.ExtentReportsListener"></listener>
+    </listeners>
+    <test name="US 01">
+        <!--        belirli packagelari bu syntax ile calistirabiliriz -->
+        <!--        ctrl + / ile yorum satiri -->
+        <packages>
+            <package name="techproed.tests.smoke"></package>
+        </packages>
+
+    </test>
+</suite>

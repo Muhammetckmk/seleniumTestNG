@@ -7,7 +7,7 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ExtentReportsListener;
 
-public class C02_PositiveLoginTest {
+public class C01_PositiveLoginTest {
     //Name: US100201_Customer_Login
     //Description:Login with Customer information
     //Acceptance Criteria: As Customer, I should be able to log in to the application
@@ -33,10 +33,11 @@ public class C02_PositiveLoginTest {
         carRentalPage.loginRegisterButton.click();
         ExtentReportsListener.extentTestInfo("login register tıklanır");
 
-        carRentalPage.emailTextBox.sendKeys(ConfigReader.getProperty("carRentalEmail"));
+        carRentalPage.emailTextBox.sendKeys(ConfigReader.getProperty("fakeEmail"));
         carRentalPage.passwordTextBox.sendKeys(ConfigReader.getProperty("carRentalPassword"));
         carRentalPage.loginButton.click();
         ExtentReportsListener.extentTestInfo("geçerli userName ve password girilir");
+        ExtentReportsListener.addScreenShotToReport();
 
 
 //        Assert.assertTrue(carRentalPage.loginVerify.getText().contains("Suzanne"));
